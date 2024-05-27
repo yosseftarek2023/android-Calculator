@@ -1,4 +1,4 @@
-package com.example.calculatoryoussef
+package com.example.calculator2youssef
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -9,7 +9,7 @@ class CalculatorViewModel: ViewModel() {
     var state by mutableStateOf(CalculatorState())
         private set
 
-    fun onAction(action:CalculationEvent){
+    fun onAction(action: CalculationEvent){
         when(action){
             is CalculationEvent.Number -> enterNumber(action.num)
             is CalculationEvent.Decimal -> enterDecimal()

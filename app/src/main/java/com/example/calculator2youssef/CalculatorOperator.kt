@@ -1,9 +1,9 @@
-package com.example.calculatoryoussef
+package com.example.calculator2youssef
 
 sealed class CalculatorOperator(val op:String) {
 
-    object Add:CalculatorOperator("+")
-    object Subtract:CalculatorOperator("-")
-    object Multiply:CalculatorOperator("*")
-    object Divide:CalculatorOperator("/")
+    data object Add: CalculatorOperator("+")
+    data object Subtract: CalculatorOperator("-")
+    data object Multiply: CalculatorOperator("*")
+    data object Divide: CalculatorOperator("/")
 }
